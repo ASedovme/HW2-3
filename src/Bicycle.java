@@ -14,7 +14,4 @@ public class Bicycle extends Trasport {
         return super.getWheelsCount();
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
 }

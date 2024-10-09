@@ -14,11 +14,4 @@ public class Car extends Trasport{
         return super.getWheelsCount();
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 }
