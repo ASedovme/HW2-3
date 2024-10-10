@@ -1,10 +1,17 @@
-public class Truck extends Trasport{
+public class Truck extends Trasport {
 
-
-    public int getWheelsCount;
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+
+    public void check() {
+        System.out.println("Проверяем грузовик " + modelName);
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+        checkEngine();
+        checkTrailer();
     }
 
     @Override
@@ -18,7 +25,4 @@ public class Truck extends Trasport{
     }
 
 
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
 }

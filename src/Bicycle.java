@@ -4,6 +4,7 @@ public class Bicycle extends Trasport {
         super(modelName, wheelsCount);
     }
 
+
     @Override
     public String getModelName() {
         return super.getModelName();
@@ -14,4 +15,10 @@ public class Bicycle extends Trasport {
         return super.getWheelsCount();
     }
 
+    public void check() {
+        System.out.println("проверяем велик " + modelName);
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+    }
 }
