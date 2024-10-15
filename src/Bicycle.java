@@ -1,9 +1,10 @@
-public class Bicycle {
+public class Bicycle extends TransportWheel {
+    public Bicycle(String nameModel, int wheelsCount) {
+        super(nameModel, wheelsCount);
+    }
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    @Override
+    public String toString() {
+        return "Bicycle{} " + super.toString();
     }
 }
